@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/9592326961.js" crossorigin="anonymous"></script>
+    <title>Odette's Form </title>
+</head>
+ 
+<body>
+    <div class="container">
+        <form>
+            <div class="head-box">
+                <h1>Payment form example </h1>
+            </div>
+            <div class="content-box">
+                <div class="alert-msj"><h4>Some fields are missing</h4></div>
+                <div class="inputs">
+                    <div class="grid-100">
+                        <div class="column-5">
+                            <label>Card#</label>
+                            <input type="text" name="card" placeholder="XXXXXXXXXXXXX">
+                        </div>
+                        <div class="column-3">
+                            <label> CVC </label>
+                            <input type="text" name="cvc" placeholder="0000">
+                        </div>
+                        <div class="column-4 dollar-sign">
+                            <label>Amount</label>
+                            <span>$</span><input type="text" name="Amount" placeholder="Amount">
+                        </div>
+                    </div>
+                    <div class="grid-50">
+                        <div>
+                            <label>First name</label>
+                            <input type="text" name="firstname">
+                            <label>City</label>
+                            <input type="text" name="city">
+                            <label>We accept</label>
+                            <div class="type-card">
+                                <fieldset>
+                                    <input type="radio" id="master" name="master" value="master">
+                                    <label for="master"><i class="fab fa-cc-mastercard"></i></label>
+ 
+                                    <input type="radio" id="visa" name="visa" value="visa">
+                                    <label for="visa"><i class="fab fa-cc-visa"></i></label>
+                                   
+                                    <input type="radio" id="amex" name="amex" value="amex">
+                                    <label for="amex"><i class="fab fa-cc-amex"></i></label>
+                                   
+                                    <input type="radio" id="diners" name="diners" value="diners">
+                                    <label for="diners"><i class="fab fa-cc-diners-club"></i></label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-50">
+                        <div>
+                            <label>Last name</label>
+                            <input type="text" name="lastname">
+                            <div>
+                                <div class="column-6">
+                                    <label>State</label>
+                                    <select name="state">
+                                        <option>Pick a state</option>
+                                        <option>Florida</option>
+                                    </select>
+                                </div>
+                                <div class="column-6">
+                                    <label>Postal Code</label>
+                                    <input type="number" name="postalcode">
+                                </div>
+                            </div>                        
+                            <label>Message</label>
+                            <textarea name="message"></textarea>
+                            <span class="textarea-label">Add any notes here.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-box">
+                <button type="reset" class="primary-btn btn">Cancel</button>
+                <button type="submit"class="secondary-btn btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
